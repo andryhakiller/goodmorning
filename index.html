@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Модальное окно для ввода имени -->
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <h2>Введите ваше имя</h2>
+            <input type="text" id="playerName" placeholder="Ваше имя">
+            <button id="startGame">Начать игру</button>
+        </div>
+    </div>
+
+    <!-- Основной интерфейс игры -->
+    <div class="container">
+        <h1>Крестики-нолики</h1>
+        <div id="board">
+            <!-- Ячейки поля 3x3 -->
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <p id="message"></p>
+        <button id="reset">Начать заново</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
